@@ -1,0 +1,816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="colColor" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="colCUSTOMER" xml:space="preserve">
+    <value>CUSTOMER</value>
+  </data>
+  <data name="colDESCRIPTION" xml:space="preserve">
+    <value>DESCRIPTION</value>
+  </data>
+  <data name="colDETAIL" xml:space="preserve">
+    <value>DETAIL</value>
+  </data>
+  <data name="colDryness" xml:space="preserve">
+    <value>Dryness</value>
+  </data>
+  <data name="ColExpPrgId" xml:space="preserve">
+    <value>Exp/Prg ID</value>
+  </data>
+  <data name="colgrade" xml:space="preserve">
+    <value>grade</value>
+  </data>
+  <data name="colINV" xml:space="preserve">
+    <value>|INV|</value>
+  </data>
+  <data name="colLength" xml:space="preserve">
+    <value>Length</value>
+  </data>
+  <data name="colLOC" xml:space="preserve">
+    <value>LOC</value>
+  </data>
+  <data name="colLOCTYPE" xml:space="preserve">
+    <value>LOCTYPE</value>
+  </data>
+  <data name="colMGD" xml:space="preserve">
+    <value>MGD</value>
+  </data>
+  <data name="colMGR" xml:space="preserve">
+    <value>Mgr</value>
+  </data>
+  <data name="colORDNUM" xml:space="preserve">
+    <value>ORDNUM</value>
+  </data>
+  <data name="colOwner" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="colP13" xml:space="preserve">
+    <value>P13</value>
+  </data>
+  <data name="colP4" xml:space="preserve">
+    <value>P4</value>
+  </data>
+  <data name="colP8" xml:space="preserve">
+    <value>P8</value>
+  </data>
+  <data name="colPAST" xml:space="preserve">
+    <value>PAST</value>
+  </data>
+  <data name="colPRODUCT" xml:space="preserve">
+    <value>PRODUCT</value>
+  </data>
+  <data name="colPROTYPE" xml:space="preserve">
+    <value>PROTYPE</value>
+  </data>
+  <data name="colRegion" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="colRowType" xml:space="preserve">
+    <value>RowType</value>
+  </data>
+  <data name="colspecie" xml:space="preserve">
+    <value>specie</value>
+  </data>
+  <data name="colSurface" xml:space="preserve">
+    <value>Surface</value>
+  </data>
+  <data name="colthick" xml:space="preserve">
+    <value>thick</value>
+  </data>
+  <data name="colTYPE" xml:space="preserve">
+    <value>TYPE</value>
+  </data>
+  <data name="colUOM" xml:space="preserve">
+    <value>UOM</value>
+  </data>
+  <data name="colWidth" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="tblCurrInven" xml:space="preserve">
+    <value>0_Inven</value>
+  </data>
+  <data name="tblGrade" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="tblHoldOrders" xml:space="preserve">
+    <value>4_Ord_Hold</value>
+  </data>
+  <data name="tblLocations" xml:space="preserve">
+    <value>Loc</value>
+  </data>
+  <data name="tblOpenOrders" xml:space="preserve">
+    <value>3_Ord_Open</value>
+  </data>
+  <data name="tblOrderHist" xml:space="preserve">
+    <value>6_Ord_Hist</value>
+  </data>
+  <data name="tblProdHist" xml:space="preserve">
+    <value>7_Prod_Hist</value>
+  </data>
+  <data name="tblProduction" xml:space="preserve">
+    <value>2_Prod</value>
+  </data>
+  <data name="tblSpecies" xml:space="preserve">
+    <value>Species</value>
+  </data>
+  <data name="tblThickness" xml:space="preserve">
+    <value>Thick</value>
+  </data>
+  <data name="btnFillDataLabel" xml:space="preserve">
+    <value>Fill Data</value>
+  </data>
+  <data name="btnRefreshDataLabel" xml:space="preserve">
+    <value>Refilter Data</value>
+  </data>
+  <data name="colCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="colDesc" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="SploadCurrInventory" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_retrieve_0_Inventory_NewDec]</value>
+  </data>
+  <data name="spLoadHoldOrds" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_retrieve_4_Hold_Orders_NewDec]</value>
+  </data>
+  <data name="SpLoadLocations" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_retrieve_Locations]</value>
+  </data>
+  <data name="SpLoadOpenOrds" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_retrieve_3_Open_Orders_NewDec]</value>
+  </data>
+  <data name="SpLoadOrdHistory" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_retrieve_6_Order_History_NewDec]</value>
+  </data>
+  <data name="SpLoadProd" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_retrieve_2_Production_NewDec]</value>
+  </data>
+  <data name="SpLoadProdHIstory" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_retrieve_7_Production_History_NewDec]</value>
+  </data>
+  <data name="tblProTypes" xml:space="preserve">
+    <value>ProductTypes</value>
+  </data>
+  <data name="comma" xml:space="preserve">
+    <value>, </value>
+  </data>
+  <data name="errCantMoveDown" xml:space="preserve">
+    <value>That Column is already at the bottom</value>
+  </data>
+  <data name="errCantMoveUp" xml:space="preserve">
+    <value>That Column is already at the top</value>
+  </data>
+  <data name="errNothingToMove" xml:space="preserve">
+    <value>There are no sort/grouping columns to move</value>
+  </data>
+  <data name="errSelectColAvail" xml:space="preserve">
+    <value>Please Select a column name from the list of available columns and then click the button again</value>
+  </data>
+  <data name="errSelectColSort" xml:space="preserve">
+    <value>Please Select a column from the the list of Sort/Grouping Columns and then click the button again</value>
+  </data>
+  <data name="errSelectColToReorder" xml:space="preserve">
+    <value>Please Select a column from the list of Sort/Grouping Columns to reorder and then click the button again</value>
+  </data>
+  <data name="sortDir" xml:space="preserve">
+    <value> ASC</value>
+  </data>
+  <data name="colLOCDESC" xml:space="preserve">
+    <value>LOCDESC</value>
+  </data>
+  <data name="filterANDConnector" xml:space="preserve">
+    <value> AND </value>
+  </data>
+  <data name="filterCloseParen" xml:space="preserve">
+    <value>) </value>
+  </data>
+  <data name="filterOpenParen" xml:space="preserve">
+    <value> (</value>
+  </data>
+  <data name="filterORConnector" xml:space="preserve">
+    <value> OR </value>
+  </data>
+  <data name="filterString" xml:space="preserve">
+    <value>{0} = '{1}'</value>
+  </data>
+  <data name="lstMathCols" xml:space="preserve">
+    <value>FixedTotalColumns</value>
+  </data>
+  <data name="rowTotals" xml:space="preserve">
+    <value>Totals</value>
+  </data>
+  <data name="wordReport" xml:space="preserve">
+    <value>Report </value>
+  </data>
+  <data name="wordSubTotal" xml:space="preserve">
+    <value> Sub Total</value>
+  </data>
+  <data name="wordTotal" xml:space="preserve">
+    <value>Avail</value>
+  </data>
+  <data name="arraySep" xml:space="preserve">
+    <value>|</value>
+  </data>
+  <data name="selAvailCol" xml:space="preserve">
+    <value>SelectedAvailableColumn</value>
+  </data>
+  <data name="selGrade" xml:space="preserve">
+    <value>SelectedGrade</value>
+  </data>
+  <data name="selLocations" xml:space="preserve">
+    <value>SelectedLocations</value>
+  </data>
+  <data name="selProType" xml:space="preserve">
+    <value>SelectedProType</value>
+  </data>
+  <data name="selSortCol" xml:space="preserve">
+    <value>SelectedSortColumn</value>
+  </data>
+  <data name="selSpecies" xml:space="preserve">
+    <value>SelectedSpecies</value>
+  </data>
+  <data name="selThickness" xml:space="preserve">
+    <value>SelectedThickness</value>
+  </data>
+  <data name="SalesLevels" xml:space="preserve">
+    <value>SalesLevels</value>
+  </data>
+  <data name="SalesTotals" xml:space="preserve">
+    <value>SalesTotals</value>
+  </data>
+  <data name="tblReport" xml:space="preserve">
+    <value>MainReportTable</value>
+  </data>
+  <data name="applicationtypeExcel" xml:space="preserve">
+    <value>application/vnd.ms-excel</value>
+  </data>
+  <data name="attachment" xml:space="preserve">
+    <value>attachment;filename=</value>
+  </data>
+  <data name="content" xml:space="preserve">
+    <value>content-Disposition</value>
+  </data>
+  <data name="dateMask" xml:space="preserve">
+    <value>MM_dd_yyyy</value>
+  </data>
+  <data name="eol" xml:space="preserve">
+    <value>\n</value>
+  </data>
+  <data name="excelError" xml:space="preserve">
+    <value>Error while exporting to Excel</value>
+  </data>
+  <data name="excelExtension" xml:space="preserve">
+    <value>.csv</value>
+  </data>
+  <data name="exportFileName" xml:space="preserve">
+    <value>Sales_Plan_</value>
+  </data>
+  <data name="sortcolsError" xml:space="preserve">
+    <value>You Can't delete the only sort/grouping column.</value>
+  </data>
+  <data name="lstHideCols" xml:space="preserve">
+    <value>ListHiddenColumns</value>
+  </data>
+  <data name="SelectBoth" xml:space="preserve">
+    <value>SelectedBoth</value>
+  </data>
+  <data name="colW00" xml:space="preserve">
+    <value>W00</value>
+  </data>
+  <data name="colW01" xml:space="preserve">
+    <value>W01</value>
+  </data>
+  <data name="colW02" xml:space="preserve">
+    <value>W02</value>
+  </data>
+  <data name="colW03" xml:space="preserve">
+    <value>W03</value>
+  </data>
+  <data name="colW04" xml:space="preserve">
+    <value>W04</value>
+  </data>
+  <data name="colW05" xml:space="preserve">
+    <value>W05</value>
+  </data>
+  <data name="colW06" xml:space="preserve">
+    <value>W06</value>
+  </data>
+  <data name="colW07" xml:space="preserve">
+    <value>W07</value>
+  </data>
+  <data name="colW08" xml:space="preserve">
+    <value>W08</value>
+  </data>
+  <data name="colW09" xml:space="preserve">
+    <value>W09</value>
+  </data>
+  <data name="colW10" xml:space="preserve">
+    <value>W10</value>
+  </data>
+  <data name="colW11" xml:space="preserve">
+    <value>W11</value>
+  </data>
+  <data name="colW12" xml:space="preserve">
+    <value>W12</value>
+  </data>
+  <data name="colW13" xml:space="preserve">
+    <value>W13</value>
+  </data>
+  <data name="lstGroupCols" xml:space="preserve">
+    <value>ListGroupColumns</value>
+  </data>
+  <data name="wordBoth" xml:space="preserve">
+    <value>BOTH</value>
+  </data>
+  <data name="rowTypeInven" xml:space="preserve">
+    <value>INVEN</value>
+  </data>
+  <data name="rowTypeOrdHolds" xml:space="preserve">
+    <value>HOLDS</value>
+  </data>
+  <data name="rowTypeProd" xml:space="preserve">
+    <value>PROD</value>
+  </data>
+  <data name="rowTypeProdHist" xml:space="preserve">
+    <value>PROD H</value>
+  </data>
+  <data name="rowTypeSales" xml:space="preserve">
+    <value>SALES</value>
+  </data>
+  <data name="colon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>yyyy-MM-dd HH:mm:ss.fff</value>
+  </data>
+  <data name="strCust" xml:space="preserve">
+    <value>ListCustomers</value>
+  </data>
+  <data name="strMgr" xml:space="preserve">
+    <value>listMgr</value>
+  </data>
+  <data name="strType" xml:space="preserve">
+    <value>ListRowTypes</value>
+  </data>
+  <data name="TimeStamp" xml:space="preserve">
+    <value>TimeLastRetrieved</value>
+  </data>
+  <data name="strGrid" xml:space="preserve">
+    <value>GridDataTableSource</value>
+  </data>
+  <data name="arrowDown" xml:space="preserve">
+    <value>#x21E9</value>
+  </data>
+  <data name="arrowUp" xml:space="preserve">
+    <value>#x21E7</value>
+  </data>
+  <data name="colSort" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="lstRegions" xml:space="preserve">
+    <value>RegionsList</value>
+  </data>
+  <data name="lstSelRegions" xml:space="preserve">
+    <value>ListSelectedRegions</value>
+  </data>
+  <data name="errSelectCust" xml:space="preserve">
+    <value>Please select a customer to continue</value>
+  </data>
+  <data name="errSelectGrade" xml:space="preserve">
+    <value>Please select a grade to continue</value>
+  </data>
+  <data name="errSelectMgr" xml:space="preserve">
+    <value>Please select a Mgr to continue</value>
+  </data>
+  <data name="errSelectRegion" xml:space="preserve">
+    <value>Please select a region to continue</value>
+  </data>
+  <data name="errSelectSpecies" xml:space="preserve">
+    <value>Please select a species to continue</value>
+  </data>
+  <data name="errSelectThick" xml:space="preserve">
+    <value>Please select a thickness to continue</value>
+  </data>
+  <data name="errSelectType" xml:space="preserve">
+    <value>Please select a type to continue</value>
+  </data>
+  <data name="errSelectColor" xml:space="preserve">
+    <value>Please select a color to continue</value>
+  </data>
+  <data name="errSelectSort" xml:space="preserve">
+    <value>Please select a sort to continue</value>
+  </data>
+  <data name="tblColor" xml:space="preserve">
+    <value>lstColorTable</value>
+  </data>
+  <data name="tblSort" xml:space="preserve">
+    <value>LstSortTable</value>
+  </data>
+  <data name="errOnDataBase" xml:space="preserve">
+    <value>Fatal Error Error occurred while attempting to execute procedure {0}, error is {1} - {2}</value>
+  </data>
+  <data name="btnTextSelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="btnTextUnselectAll" xml:space="preserve">
+    <value>Unselect All</value>
+  </data>
+  <data name="SpLoadProtypes" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_ProType]</value>
+  </data>
+  <data name="TimeSpan" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lstGridCols" xml:space="preserve">
+    <value>GridColumnDirectory</value>
+  </data>
+  <data name="textNoValue" xml:space="preserve">
+    <value>(No Value)</value>
+  </data>
+  <data name="toolTipLocationColumn" xml:space="preserve">
+    <value>Column: {0}</value>
+  </data>
+  <data name="toolTipLocationRow" xml:space="preserve">
+    <value>Row : </value>
+  </data>
+  <data name="toolTipValueRow" xml:space="preserve">
+    <value>Value : {0}</value>
+  </data>
+  <data name="wordDup" xml:space="preserve">
+    <value>Dup</value>
+  </data>
+  <data name="wordID" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="applicationTypePDF" xml:space="preserve">
+    <value>application/octet-stream</value>
+  </data>
+  <data name="dblQuotes" xml:space="preserve">
+    <value>""</value>
+  </data>
+  <data name="hdrFilterString" xml:space="preserve">
+    <value>{0} = {1}</value>
+  </data>
+  <data name="pdfError" xml:space="preserve">
+    <value>Error while generating PDF</value>
+  </data>
+  <data name="pdfFileExtension" xml:space="preserve">
+    <value>.pdf</value>
+  </data>
+  <data name="pdfTitle" xml:space="preserve">
+    <value>Sales Plan</value>
+  </data>
+  <data name="sngQuotes" xml:space="preserve">
+    <value>"</value>
+  </data>
+  <data name="spLoadParmProType" xml:space="preserve">
+    <value>@whichProductType</value>
+  </data>
+  <data name="SpLoadColor" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_ProType_Regions_Locations_Species_Color]</value>
+  </data>
+  <data name="SpLoadGrade" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_ProType_Regions_Locations_Species_Grade]</value>
+  </data>
+  <data name="spLoadParmIncludeBlank" xml:space="preserve">
+    <value>@IncludeBlankRegions</value>
+  </data>
+  <data name="spLoadParmLocation" xml:space="preserve">
+    <value>@whichLocation</value>
+  </data>
+  <data name="spLoadParmRegion" xml:space="preserve">
+    <value>@whichRegion</value>
+  </data>
+  <data name="spLoadParmSpecie" xml:space="preserve">
+    <value>@whichSpecie</value>
+  </data>
+  <data name="SpLoadRegions" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_ProType_Regions]</value>
+  </data>
+  <data name="SpLoadRegionsLocations" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_ProType_Regions_Locations]</value>
+  </data>
+  <data name="SpLoadSort" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_ProType_Regions_Locations_Species_Sort]</value>
+  </data>
+  <data name="SpLoadSpecies" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_ProType_Regions_Locations_Species]</value>
+  </data>
+  <data name="SpLoadThickness" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_ProType_Regions_Locations_Species_Thickness]</value>
+  </data>
+  <data name="tblLocRegions" xml:space="preserve">
+    <value>LocationRegionsXRef</value>
+  </data>
+  <data name="wordALL" xml:space="preserve">
+    <value>ALL</value>
+  </data>
+  <data name="tblFiltered" xml:space="preserve">
+    <value>FIlteredDataTable</value>
+  </data>
+  <data name="valueSep" xml:space="preserve">
+    <value> - </value>
+  </data>
+  <data name="vwColDetail" xml:space="preserve">
+    <value>DETAILId</value>
+  </data>
+  <data name="vwColORDNUM" xml:space="preserve">
+    <value>ORDNUMId</value>
+  </data>
+  <data name="wordMgr" xml:space="preserve">
+    <value>MGR:</value>
+  </data>
+  <data name="typeProdHist" xml:space="preserve">
+    <value>7_PROD_HIST</value>
+  </data>
+  <data name="typeHolds" xml:space="preserve">
+    <value>4_ORD_HOLDS</value>
+  </data>
+  <data name="colTotal" xml:space="preserve">
+    <value>Totals</value>
+  </data>
+  <data name="maxGridColumns" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="colColorWidth" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="colCustWidth" xml:space="preserve">
+    <value>400</value>
+  </data>
+  <data name="colGradeWith" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="colMathWidth" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="colMGRWidth" xml:space="preserve">
+    <value>180</value>
+  </data>
+  <data name="colSortWidth" xml:space="preserve">
+    <value>75</value>
+  </data>
+  <data name="colSpecieWidth" xml:space="preserve">
+    <value>90</value>
+  </data>
+  <data name="colThickWidth" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="colTotalWidth" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="colTypeWidth" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="lstGridWide" xml:space="preserve">
+    <value>GridColumnWidths</value>
+  </data>
+  <data name="vwColumnName" xml:space="preserve">
+    <value>col{0}Id</value>
+  </data>
+  <data name="lstColWidths" xml:space="preserve">
+    <value>ListOrderedColumnWidths</value>
+  </data>
+  <data name="blankVal" xml:space="preserve">
+    <value>(No Code)</value>
+  </data>
+  <data name="letterW" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="AllValuesSelected" xml:space="preserve">
+    <value>All {0}(s) Selected</value>
+  </data>
+  <data name="asofMask" xml:space="preserve">
+    <value>MM/dd/yyyy HH:mm</value>
+  </data>
+  <data name="BlankWord" xml:space="preserve">
+    <value>Blanks</value>
+  </data>
+  <data name="colNoPrint" xml:space="preserve">
+    <value>NoPrint</value>
+  </data>
+  <data name="colNoPrintWidth" xml:space="preserve">
+    <value>75</value>
+  </data>
+  <data name="equal" xml:space="preserve">
+    <value> = </value>
+  </data>
+  <data name="Nothing" xml:space="preserve">
+    <value>No {0}(s) Selected</value>
+  </data>
+  <data name="pdfSubject" xml:space="preserve">
+    <value>Product Availabiliity as of {0}</value>
+  </data>
+  <data name="valuesSelectedAS" xml:space="preserve">
+    <value> selection(s) are </value>
+  </data>
+  <data name="SpLoadNoPrint" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_ProType_Regions_Locations_Species_NoPrint]</value>
+  </data>
+  <data name="tblNoPrint" xml:space="preserve">
+    <value>LstNoPrintTable</value>
+  </data>
+  <data name="rowTypeOrdHist" xml:space="preserve">
+    <value>SALES H</value>
+  </data>
+  <data name="typeSalesHIst" xml:space="preserve">
+    <value>6_ORD_HIST</value>
+  </data>
+  <data name="Zero" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pagePara" xml:space="preserve">
+    <value>Page </value>
+  </data>
+  <data name="datePara" xml:space="preserve">
+    <value>Date: {0}</value>
+  </data>
+  <data name="datePrintMask" xml:space="preserve">
+    <value>MM/dd/yyyy</value>
+  </data>
+  <data name="timePara" xml:space="preserve">
+    <value>Time: {0}</value>
+  </data>
+  <data name="timePrintMask" xml:space="preserve">
+    <value>hh:mm tt</value>
+  </data>
+  <data name="Space" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="uScore" xml:space="preserve">
+    <value>_</value>
+  </data>
+  <data name="fontHelvetica" xml:space="preserve">
+    <value>Helvetica</value>
+  </data>
+  <data name="settingsColControlName" xml:space="preserve">
+    <value>ControlName</value>
+  </data>
+  <data name="settingsColControlValue" xml:space="preserve">
+    <value>ControlValue</value>
+  </data>
+  <data name="settingsColUserId" xml:space="preserve">
+    <value>UserId</value>
+  </data>
+  <data name="spLoadSettings" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_retrieve_SalesPlan_Settings]</value>
+  </data>
+  <data name="spSaveSettings" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_update_SalesPlan_Settings]</value>
+  </data>
+  <data name="spSettingsParmControlName" xml:space="preserve">
+    <value>@ControlName</value>
+  </data>
+  <data name="spSettingsParmControlValue" xml:space="preserve">
+    <value>@ControlValue</value>
+  </data>
+  <data name="spSettingsParmUserId" xml:space="preserve">
+    <value>@UserId</value>
+  </data>
+  <data name="xmlListItem" xml:space="preserve">
+    <value>ListItem</value>
+  </data>
+  <data name="xmlselected" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="xmltext" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="xmlvalue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="noneSelected" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="colPRODUCTWidth" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="lstProducts" xml:space="preserve">
+    <value>TableFoundProducts</value>
+  </data>
+  <data name="SpLoadProducts" xml:space="preserve">
+    <value>[NWHBUS].[dbo].[usp_Retrieve_Product_Descriptions]</value>
+  </data>
+  <data name="strProd" xml:space="preserve">
+    <value>lstmatchedProducts</value>
+  </data>
+</root>

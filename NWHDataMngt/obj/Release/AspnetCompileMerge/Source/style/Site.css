@@ -1,0 +1,1490 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #F0FDFD;
+    /*font-size: .80em;*/
+    font-size: 11pt;
+    font-family: Calibri, "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+
+.gradient {
+	filter: none;
+}	
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #4b6c9e;
+    width: 100%;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+/* --------------- xGridView ------------- */
+.xGridView
+{
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-top: 0;
+	margin: 0 5px;
+}
+.xGridView th a
+{
+	color: #333333;
+	font-weight: bold;
+	text-decoration: none;
+	text-align:center;
+}
+.xGridView th 
+{
+	text-align:center;
+	vertical-align:bottom;
+}
+.xGridView caption 
+{
+    color: white;
+	background: #00438d url(../img/old-browsers/colors/bg_button-icon.png) repeat-x;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-radius: 10px 10px 0 0;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#006aac), to(#00438d));
+	background: -webkit-linear-gradient(top, #006aac, #00438d);
+	background: -ms-linear-gradient(top, #006aac, #00438d);
+	background: -o-linear-gradient(top, #006aac, #00438d);
+	background: linear-gradient(top, #006aac, #00438d);
+	border-color: #004795;
+	border-radius: 10px 10px 0 0;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+	margin: 0;
+	padding: 15px 16px;
+	font-size:medium;
+	text-align:left;
+}
+.xGridView td.caption 
+{
+	font-weight: bold;
+	color: white;
+	font-size:12px;
+	text-align:left;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	border: solid 1px #7f7f7f;
+}
+.xGridView td 
+{        
+	padding: 2px 2px 2px 2px;
+	/*padding: 9px 10px;*/
+	vertical-align:middle;
+	border-top: 1px solid #e6e6e6;
+	border-left: 1px dotted #cfcfcf;
+}
+/*was: padding: 9px 2px;*/
+.xGridView td.labeltext
+{
+	text-align: right;
+}
+.xGridView th
+{
+    color: #333333;
+	background: #d6dadf url(../img/old-browsers/colors/bg_button.png) repeat-x;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#efeff4), to(#d6dadf));
+	background: -webkit-linear-gradient(top, #efeff4, #d6dadf);
+	background: -ms-linear-gradient(top, #efeff4, #d6dadf);
+	background: -o-linear-gradient(top, #efeff4, #d6dadf);
+	background: linear-gradient(top, #efeff4, #d6dadf);
+	border-color: #cccccc;
+	padding: 9px 10px;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+	box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+	border-top: 0;
+}
+.xGridView td.FormViewSubHeader
+{
+	padding-right: 2px;
+	padding-left: 2px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 1px;
+	height: 16px;
+	font-size:14px;
+	border-top: solid 5px #BBD9EE;
+	border-bottom: solid 5px #BBD9EE;
+}
+/* above height was 24px, padding left and right was 10px */
+.xGridView th input
+{
+    width:99%;
+}
+.xGridView select[disabled]
+{
+  color:black;
+  background-color:Transparent;
+}
+.xGridView input[disabled]
+{
+  color:black;
+  background-color:Transparent;
+}
+
+/* --------------- xGridViewTS ------------- */
+.xGridViewTS
+{
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-top: 0;
+	position:relative;
+}
+.xGridViewTS th a
+{
+	color: #333333;
+	font-weight: bold;
+	text-decoration: none;
+	text-align:center;
+}
+.xGridViewTS th 
+{
+	text-align:center;
+	vertical-align:bottom;
+}
+.xGridViewTS caption 
+{
+    color: white;
+	background: #00438d url(../img/old-browsers/colors/bg_button-icon.png) repeat-x;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#006aac), to(#00438d));
+	background: -webkit-linear-gradient(top, #006aac, #00438d);
+	background: -ms-linear-gradient(top, #006aac, #00438d);
+	background: -o-linear-gradient(top, #006aac, #00438d);
+	background: linear-gradient(top, #006aac, #00438d);
+	border-color: #004795;
+	border-radius: 10px 10px 0 0;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+	margin: 0;
+	padding: 6px 16px;
+	font-size:medium;
+	text-align:left;
+}
+/* above border-radius was 10px 10px 0 0, padding was 15px, 16px*/
+.xGridViewTS td.caption 
+{
+	font-weight: bold;
+	color: white;
+	font-size:12px;
+	text-align:left;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	border: solid 1px #7f7f7f;
+}
+/* padding-top was 7px, padding-bottom was 7px, padding-left was 7px */
+.xGridViewTS td 
+{        
+	padding: 2px 2px 2px 2px;
+	vertical-align:middle;
+	border-top: 1px solid #e6e6e6;
+	border-left: 1px dotted #cfcfcf;
+	padding: 2px;
+	height:16px;
+}
+.xGridViewTS td.labeltext
+{
+	text-align: right;
+}
+.xGridViewTS th
+{
+    color: #666666;
+	background: #d6dadf url(../img/old-browsers/colors/bg_button.png) repeat-x;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#efeff4), to(#d6dadf));
+	background: -webkit-linear-gradient(top, #efeff4, #d6dadf);
+	background: -ms-linear-gradient(top, #efeff4, #d6dadf);
+	background: -o-linear-gradient(top, #efeff4, #d6dadf);
+	background: linear-gradient(top, #efeff4, #d6dadf);
+	border-color: #cccccc;
+	padding: 0px 0px;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+	box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+	border-top: 0;
+}
+/* padding was 8px, 9px*/
+.xGridViewTS td.FormViewSubHeader
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	height: 16px;
+	font-size:14px;
+	border-top: solid 0px #BBD9EE;
+	border-bottom: solid 0px #BBD9EE;
+}
+/* above height ws 24px; padding-top was 3px, padding right-left was 5px, border-top was 5px, border-bottom was 5px*/
+.xGridViewTS th input
+{
+    width:99%;
+}
+.xGridViewTS select[disabled]
+{
+  color:black;
+  background-color:Transparent;
+}
+.xGridViewTS input[disabled]
+{
+  color:black;
+  background-color:Transparent;
+}
+
+/* --------------- xFormView --------------- */
+.xFormView, xFormViewWithoutBorder
+{
+	font-size: 11px;    
+    border:2px Solid White;
+}
+.xFormView table
+{    
+    padding:0 0 0 0;
+	line-height: 16px;
+	font-weight:bold;    
+    border-right:1px Solid #d6dadf;
+    border-left:1px Solid #d6dadf;
+    border-bottom:1px Solid #d6dadf;
+}
+/*Above height ws 30px;*/
+.xFormView th.caption, .xFormViewWithoutBorder th.caption 
+{
+    color: white;
+	background: #00438d url(../img/old-browsers/colors/bg_button-icon.png) repeat-x;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#006aac), to(#00438d));
+	background: -webkit-linear-gradient(top, #006aac, #00438d);
+	background: -ms-linear-gradient(top, #006aac, #00438d);
+	background: -o-linear-gradient(top, #006aac, #00438d);
+	background: linear-gradient(top, #006aac, #00438d);
+	border-color: #004795;
+	border-radius: 10px 10px 0 0;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+	margin: 0;
+	padding: 9px 16px;
+	font-size:medium;
+	font-weight:lighter;
+	text-align:left;
+}
+.xFormView th.captionLogin, .xFormViewWithoutBorder th.captionLogin 
+{
+    color: white;
+	background: #00438d url(../img/old-browsers/colors/bg_button-icon.png) repeat-x;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#006aac), to(#00438d));
+	background: -webkit-linear-gradient(top, #006aac, #00438d);
+	background: -ms-linear-gradient(top, #006aac, #00438d);
+	background: -o-linear-gradient(top, #006aac, #00438d);
+	background: linear-gradient(top, #006aac, #00438d);
+	border-color: #004795;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+	margin: 0;
+	padding: 9px 16px;
+	font-size:medium;
+	font-weight:lighter;
+	text-align:left;
+}
+.xFormView td 
+{		
+ 	padding:1px 1px 1px 1px;
+ 	vertical-align:middle;
+}
+.xFormViewWithoutBorder td 
+{
+	color:#333333;
+    padding: 1px 1px 1px 1px;
+    height:8px;
+	font-size:12px;
+}
+.xFormViewWithoutBorder a 
+{
+	color:#333333;
+    padding: 1px 1px 1px 1px;
+    height:8px;
+    font-size:12px;
+    font-weight:bold;
+}
+.xFormView td.FormViewLabelCell, .xFormViewWithoutBorder td.FormViewLabelCell
+{
+	text-align:right;
+}
+.xFormView td.FormViewLabelCellWithBorder, .xFormViewWithoutBorder td.FormViewLabelCellWithBorder
+{
+	text-align:right;
+	border-right: solid 1px #BBD9EE;
+	font-weight:bold;
+	height:16px;
+}
+/*Above height was 22px;*/
+.xFormView td.FormViewLabelCellBold, td.FormViewLabelCellBold, .xFormViewWithoutBorder td.FormViewLabelCellBold, td.FormViewLabelCellBold
+{
+	text-align:right;
+	font-weight:bold;
+}
+.xFormView th.FormViewSubHeader, .xFormViewWithoutBorder th.FormViewSubHeader
+{
+	color: #666666;
+	background: #d6dadf url(../img/old-browsers/colors/bg_button.png) repeat-x;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#efeff4), to(#d6dadf));
+	background: -webkit-linear-gradient(top, #efeff4, #d6dadf);
+	background: -ms-linear-gradient(top, #efeff4, #d6dadf);
+	background: -o-linear-gradient(top, #efeff4, #d6dadf);
+	background: linear-gradient(top, #efeff4, #d6dadf);
+	border-color: #cccccc;
+	padding: 3px 16px;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+	box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.85);
+	border-top: 0;
+	text-align:left;
+	font-size:13px;
+	font-weight:bold;
+}
+.xFormView td.HighlightedText, .xFormViewWithoutBorder td.HighlightedText
+{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 3px;
+	height: 20px;
+	font-size:11px;
+	border-top: solid 1px #BBD9EE;
+	border-bottom: solid 1px #BBD9EE;
+}
+/*Above height was 24px;*/
+.xFormView td.HighlightedTextMedium, .xFormViewWithoutBorderMedium td.HighlightedTextMedium
+{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	height: 16px;
+	font-size:11px;
+	vertical-align:middle;
+	border-top: solid 1px #BBD9EE;
+	border-bottom: solid 1px #BBD9EE;
+}
+/*Above height was 24px*/
+.xFormView td.HighlightedTextLarge, .xFormViewWithoutBorderLarge td.HighlightedTextLarge
+{
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: bold;
+	background: #efeff1;
+	padding-bottom: 0px;
+	padding-top: 1px;
+	font-size:14px;
+	border-top: solid 1px #BBD9EE;
+	border-bottom: solid 1px #BBD9EE;
+	height: 16px;
+}
+/*above height was 30px, padding-top was 3px */
+
+/* --------------- xTableWithoutBorder --------------- */
+.xTableWithoutBorder
+{
+	border:none;
+    color: #333333;
+    width:100%;
+}
+.xTableWithoutBorder td
+{
+	color: #333333;
+	border-bottom: medium none;
+	height: 6px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+----------------------------------------------------------*/
+
+/* *************************** Buttons ************************* */
+
+.PgButton
+{
+	text-align:center;
+	vertical-align: middle;
+	color:white;
+	font-family:Calibri;
+	font-size:14pt;
+	background-color:blue;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: #1e5799; /* Old browsers */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzIwN2NjYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+	/*padding-bottom:4px;*/
+	/*padding-top:4px;*/
+	/*margin-bottom:8px;*/
+	margin:0px;
+	padding:0px;
+
+	text-decoration: none;
+	padding: 2px;
+	cursor: pointer;
+	cursor:help;
+}
+
+.ButtonStd{
+	color: blue;
+	background-color: blanchedalmond;
+	font-weight: bold;
+	font-size: 11pt;
+	line-height: 18pt;
+	height: 22pt;
+}
+
+.Std3DButton
+{
+		font-size: 13px;
+	line-height: 16px;
+	color: #666666;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: baseline;
+	*vertical-align: middle;
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	text-transform: none;
+	padding: 0 4px;
+	font-size: 13px;
+	height: 28px;
+	*height: 26px;
+	/*-webkit-background-clip: padding-box;*/
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	/*min-width: 6px;*/
+	border-width: 1px;
+	border-style: solid;
+	/*-webkit-background-clip: padding-box;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-appearance: none;*/
+	background-position: center center !important; /* This is required for glossy gradients image fallbacck*/
+	}
+	.ie7 button.button {
+		line-height: 24px;
+		height: 28px;
+	}
+	.ie7 .button {
+	  margin-left: 4px;
+	}
+	.ie7 .button:first-child {
+		margin-left: 0;
+	}
+	.button.full-width {
+		width: 100%;
+		margin: 0;
+		height: auto;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.no-boxsizing .button.full-width {
+		width: 94%;
+	}
+	.no-boxsizing button.button.full-width {
+		width: 100%;
+	}
+	.button-height .button.float-left,
+	.button-height .button.float-right {
+		margin-top: 2px;
+	}
+	.button.absolute-left,
+	.button.absolute-right {
+		position: absolute;
+		margin-top: -15px;
+	}
+	.legend {
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+	}
+	.button-group > .button,
+	.select-arrow {
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), inset 1px 0 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), inset 1px 0 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+	}
+	.button, .select-value, .legend {
+		-webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	}
+
+/* Custom tones shadows */
+.button.black-gradient, .button-group > .black-gradient:first-child,
+.button.anthracite-gradient, .button-group > .anthracite-gradient:first-child,
+.button.grey-gradient, .button-group > .grey-gradient:first-child,
+.button.blue-gradient, .button-group > .blue-gradient:first-child,
+.button.red-gradient, .button-group > .red-gradient:first-child,
+.button.orange-gradient, .button-group > .orange-gradient:first-child,
+.button.green-gradient, .button-group > .green-gradient:first-child,
+.black-gradient > .select-value, .anthracite-gradient > .select-value,
+.blue-gradient > .select-value, .grey-gradient > .select-value,
+.red-gradient > .select-value, .orange-gradient > .select-value,
+.green-gradient > .select-value {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+.button.black-gradient,
+.button.anthracite-gradient,
+.button.grey-gradient,
+.button.blue-gradient,
+.black-gradient > .select-value, .anthracite-gradient > .select-value,
+.blue-gradient > .select-value, .grey-gradient > .select-value {
+	-webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+}
+.button.red-gradient,
+.button.orange-gradient,
+.button.green-gradient,
+.select.red-gradient > .select-value, .select.orange-gradient > .select-value, .select.green-gradient > .select-value {
+	-webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
+}
+.button-group > .silver-gradient,
+.button-group > .white-gradient,
+.white-gradient > .select-arrow {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), inset 1px 0 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), inset 1px 0 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+.ButtonRedText
+{
+	color: red;
+	border-color: red;
+}
+
+.ButtonGreenText
+{
+	color: green;
+	border-color: green;
+}
+
+.ButtonBlueTextS
+{
+	color: blue;
+	border-color: blue;
+	font-weight:bold;
+}
+
+.ButtonBarStd {
+	width:100%;
+	background-color:aliceblue;
+	border-width:2px;
+	border-style:outset;
+	text-align:center;
+	color:white;
+}
+
+.StdButtonBar {
+	width:100%;
+	text-align:center;
+	vertical-align:middle;
+	font-weight:bold;
+	font-size:10pt;
+	font-family: Calibri;
+	line-height: 16px;
+	color: black;
+	margin: 1px;
+	padding: 1px;
+}
+
+/* *************************** DIVs ************************* */
+
+.AttachmentListBlock
+{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left:50%;
+	height: 450px;
+	width: 630px;
+	margin-left:-315px;
+	margin-top:-225px;
+	background-color:#FFFFFF;
+	border:3px inset Gray;
+}
+
+.LandscapeDiv{
+    PAGE-BREAK-BEFORE: always;
+    width: 100%;
+    height: 100%;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(Rotation=3);
+}
+
+.MainDiv {
+	width:99%;
+	font-family:Calibri;
+	font-size:12pt;
+}
+
+.PgNbrBlock
+{
+	font-family: Calibri, Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:#6D6968;
+	width:98%;
+	text-align:center;
+}
+
+.StandardDiv {
+	width:100%;
+	text-align: left;
+	font-size:10pt;
+	font-family:Calibri;
+	font-weight:normal;
+	margin:1px;
+	padding:1px;
+}
+
+.SpecHeaderTitle
+{
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	font-size:18pt;
+	background-color:blue;
+	background: #1e5799; /* Old browsers */
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzIwN2NjYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+	padding-bottom:4px;
+	padding-top:4px;
+	margin-bottom:8px;
+}
+
+.MyHeaderLine
+{
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	font-size:18pt;
+	background-color:blue;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: #1e5799; /* Old browsers */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzIwN2NjYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-8 */
+	padding-bottom:4px;
+	padding-top:4px;
+	margin-bottom:8px;
+}
+
+/* *************************** GRIDS ************************* */
+
+.GridViewPadding
+{
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:4px;
+	padding-right:4px;
+}
+
+.GridViewMain
+{
+	padding-left: 10px;
+	padding-top: 4px;
+	position:relative;
+}
+
+.GridViewDiv
+{
+	padding-left:4px;
+	padding-right:4px;
+}
+
+.GridViewCol
+{
+	font-family: Calibri;
+}
+		
+/* *************************** LABELS ************************* */
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.GridDisplayLabel {
+	font-family: Arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 10pt;
+	color: black;
+	font-weight: bolder;
+}
+
+.GridDisplayLabelSpec {
+	font-family: Arial 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 10pt;
+	color: maroon;
+	font-weight: bolder;
+}
+.GroupLabelStd {
+	font-size:11pt;
+	color:blue;
+	font-weight:bold;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.LabelGridHdrStd {
+	color: blue;
+	font-size: 12pt;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.LabelGridHdrLarger {
+	color: blue;
+	font-size: 14pt;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.LabelGridHdrLarge {
+	color: blue;
+	font-size: 16pt;
+	font-weight: bold;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.lblHighlightedBlue
+{
+	font-weight:bold;
+	color:Blue;
+	font-family:Calibri;
+	font-size:14pt;
+	font-weight: bold;
+}
+
+.lblHighlightedBlueSmall
+{
+	font-weight:bold;
+	color:Blue;
+	font-family:Calibri;
+	font-size:12pt;
+	font-weight: bold;
+}
+
+.lblHighlightedBlueSmallest
+{
+	font-weight:bold;
+	color:Blue;
+	font-family:Calibri;
+	font-size:10pt;
+	font-weight: bold;
+}
+
+.MyHeaderLabel
+{
+	font-family:Calibri;
+	font-size:12pt;
+	font-weight:bold;
+	color: #254117;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.ProblemStatusLabel
+{
+	font-family: Calibri, Arial;
+	font-size:11pt;
+	font-weight:bold;
+	color:Maroon;
+}
+
+.StdBlueLabel {
+	color: blue;
+	font-weight: bold;
+}
+
+.StdErrorMode {
+	font-weight:bold;
+	font-family:Calibri;
+	color: maroon;
+	font-size:11pt;
+}
+
+/* *************************** TEXTBOX ************************* */
+
+.FilterTextBoxStd {
+	border: 0px;
+	border-style: none;
+	background-color: transparent;
+	font-size: 8pt;
+	font-family: Arial Narrow;
+	color: #444444;
+	border: none;
+}
+
+.InputTextWNoBorder {
+	color:black;
+	background-color:white;
+	font-size:10pt;
+	font-family:Calibri;
+  vertical-align: top;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+	border: none;
+}
+
+.InputNbrWNoBorder {
+	color:black;
+	background-color:white;
+	font-size:10pt;
+	font-family:Calibri;
+  vertical-align: top;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+	border: none;
+	text-align: right;
+}
+
+.StdInputText {
+	font-family: Calibri;
+	color:black;
+	background-color:white;
+}
+
+.StdInputTextWk {
+	font-family: Calibri;
+	color:black;
+	background-color:white;
+	width: 60px;
+	text-align:right;
+}
+
+.InputTextWeekend {
+	font-family: Calibri;
+	color:darkblue;
+	background-color:aliceblue;
+	width: 60px;
+	text-align:right;
+}
+
+.SmallTextBlock {
+	font-family: Calibri;
+	font-size:9pt;
+	color:black;
+}
+
+.SmallerTextBlock {
+	font-family: Calibri;
+	font-size:8pt;
+	color:black;
+}
+
+.SmallestTextBlock {
+	font-family: Calibri;
+	font-size:7pt;
+	color:black;
+}
+
+.TextFilterBoxStd {
+  background-color: white;
+  border: 1px solid gray;
+  font-family: Calibri;
+  font-size: 10pt;
+}
+
+.TextFilterBoxSpec {
+  background-color: #ffffcc;
+  border: 1px solid gray;
+  font-family: Calibri;
+  font-size: 10pt;
+}
+
+.MyFilterCriteria
+{
+	text-align:center;
+}
+
+/* *************************** TABLES ************************* */
+
+.ColHeaderStd {
+	text-align: center;
+	background-color: #A3ACD1;
+	color: white;
+	font-weight: bold;
+	font-size: 9pt;
+	border: 1px solid gray;
+	margin-left:2px;
+	margin-right:2px;
+	margin-top:1px;
+	margin-bottom:1px;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.FilterTable
+{
+	line-height:20px;
+	width:400px;
+}
+
+.ListBoxTopPadding {
+	padding-top:2px;
+}
+
+.ListBoxPaddingTB {
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.TableCellPaddingGen {
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:4px;
+	padding-right:4px;
+}
+
+.ListBoxFilter{
+	padding-top:6px;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.StdTableCell {
+	color:black;
+	/*background-color:white;*/
+	font-size:10pt;
+	font-family:Calibri;
+  vertical-align: top;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+	border: 1px solid gray;
+	vertical-align:top;
+}
+
+.StdTableFtrCell {
+	color:black;
+	background-color:aquamarine;
+	font-size:10pt;
+	font-family:Calibri;
+  vertical-align: top;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+	border: 1px solid gray;
+	text-align:right;
+	font-weight: bold;
+}
+
+.TableCellSpecial {
+	color:black;
+	background-color:#D9FFD0;
+	font-size:10pt;
+	font-family:Calibri;
+  vertical-align: top;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.StdTableCellWide {
+	color:black;
+	/*background-color:white;*/
+	font-size:10pt;
+	font-family:Calibri;
+  vertical-align: top;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.StdTableCellSmall {
+	color:black;
+	background-color:white;
+	font-size:9pt;
+	font-family:Calibri;
+  vertical-align: top;
+}
+
+.StdTableCellLarge {
+	color:black;
+	background-color:white;
+	font-size:11pt;
+	font-family:Calibri;
+  vertical-align: top;
+}
+
+.StdTableCellLarger {
+	color: black;
+	background-color: white;
+	font-size: 12pt;
+	font-family: Calibri;
+	vertical-align: top;
+}
+.StdTableCellWBorder {
+	color:black;
+	background-color:white;
+	font-size:10pt;
+	font-family:Calibri;
+  vertical-align: top;
+  border: 1px solid gray;
+}
+
+.StdTableCellWBorderLarge {
+	color: black;
+	background-color: white;
+	font-size: 12pt;
+	font-family: Calibri;
+	vertical-align: top;
+	border: 1px solid gray;
+}
+.StdTableCellWBorderDarker {
+	color:black;
+	background-color:cyan;
+	font-size:10pt;
+	font-family:Calibri;
+  vertical-align: top;
+  border: 1px solid gray;
+}
+
+.TableFilterHdrCell
+{
+	text-align: left;
+	vertical-align: middle;
+	/*font-weight:bold;*/
+	color:#565051;
+	border: 1px solid Gray;
+	padding-left:2px;
+	padding-right:2px;
+	background-color:#E0E0E0;
+
+}
+
+.TableSeperatorRow {
+	background-color: white;
+	border-left: none;
+	border-right: none;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.TableMain
+{
+	padding: 1px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	border: 1px solid Gray;
+	position:relative;
+	color:Black;
+	background-color: White;
+}
+
+.TableForHorizontalLine {
+	padding:0px;
+	border-spacing:0px;
+	border:none;
+	width:100%;
+}
+
+.TableHdrCell
+{
+	background-color: #8FD8D8;
+	text-align:center;
+	vertical-align: middle;
+	color:#565051;
+	border: 1px solid Gray;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.TableHdrCellLarge {
+	background-color: #8FD8D8;
+	text-align: center;
+	vertical-align: middle;
+	color: #565051;
+	border: 1px solid Gray;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-family: Arial;
+	font-size: 12pt;
+}
+
+.TableHdrCellSub
+{
+	background-color:#DDDDDD;
+	font-size:smaller;
+	text-align:center;
+	vertical-align: middle;
+	font-weight:bold;
+	color:#565051;
+	border: 1px solid Gray;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.SmallTableStd
+{
+	padding: 1px;
+	border-spacing: 0px;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: 9pt;
+}
+
+.MedTableStd
+{
+	padding: 1px;
+	border-spacing: 0px;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+.LargeTableStd
+{
+	padding: 1px;
+	border-spacing: 0px;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: 11pt;
+}
+
+.LargerTableStd {
+	padding: 1px;
+	border-spacing: 0px;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: 12pt;
+}
+
+.TableSubEditStd {
+	padding:1px;
+	border-spacing:0px;
+	width:100px;
+}
+
+.TablePresentationStd {
+	padding:0px;
+	border-spacing:0px;
+	width:90px;
+}
+
+/* *************************** General Controls ************************* */
+
+.ControlNoBorderWB {
+	border: none;
+	background-color: white;
+	color: blue;
+}
+
+.ui-datepicker .ui-widget-content {
+    background: #999 none;
+}
+
+/* *************************** MISC ************************* */
+
+.effect1{
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+.manBG {
+  background-color: #db9695; 
+  color: white; 
+  border-color: black;
+}
+
+.blue {
+  background-color: #93cddd; 
+  color: black; 
+  border-color: black;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.CheckBoxList
+{
+    font-size: 1em;
+    line-height: 1.05em;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.BoxShadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.NumberInputBox {
+	text-align: right;
+}
+
+.StdCellContent {
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.GridViewIdentFieldLarge
+{
+	padding-left:4px;
+	padding-right:4px;
+	width: 140px;
+	/*white-space: nowrap;*/
+}
+
+.GridViewIdentField
+{
+	padding-left:4px;
+	padding-right:4px;
+	width: 100px;
+	border: 1px solid gray;
+}
+
+.BlandAndUnblocked {
+	border: none;
+	background-color: transparent;
+}
+
+.TestItemForGridView {
+	position:relative;;
+	top: expression(document.getElementById("div-datagrid").scrollTop-2);
+	z-index: 10;
+}
+
+.FontNarrowish {
+	font-family:"Arial Narrow", Arial, sans-serif;
+}

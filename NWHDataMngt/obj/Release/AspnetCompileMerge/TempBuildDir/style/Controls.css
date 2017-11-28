@@ -1,0 +1,81 @@
+﻿
+li.square {
+	width: 26px; 
+	height: 26px;
+	border: 1px solid black;
+	display: block;
+	float: left;
+	margin: 5px;
+	background-color: #03090F;	
+}
+
+ul.StdView { 
+    display: block;
+    list-style-type: none;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding-left: 10px;
+} 
+
+
+.CNLeftslide {
+  position: absolute;
+  bottom: -999em;
+  transition: right 4s ease-in;
+  -webkit-transition: right 4s ease-in;
+  -moz-transition: right 4s ease-in;
+}
+
+.CNRightslide {
+  position: absolute;
+  right: 999em;
+  transition: right 4s ease-in;
+  -webkit-transition: right 4s ease-in;
+  -moz-transition: right 4s ease-in;
+}
+
+.CNTopslide {
+  position: absolute;
+  top: -999em;
+  transition: right 4s ease-in;
+  -webkit-transition: right 4s ease-in;
+  -moz-transition: right 4s ease-in;
+}
+
+.CNBottomslide {
+  position: absolute;
+  bottom: 999em;
+  transition: right 4s ease-in;
+  -webkit-transition: right 4s ease-in;
+  -moz-transition: right 4s ease-in;
+}
+
+.div-lanimate {
+  left: 0;
+}
+
+.div-ranimate {
+  right: 0;
+}
+
+.div-tanimate {
+  top: 0;
+}
+
+.div-banimate {
+  bottom: 0;
+}
+
+.RightVerticalButton {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+	float: right;
+}
+
+.LeftVerticalButton {
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
+	float: left;
+}
